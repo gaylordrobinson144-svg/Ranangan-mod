@@ -1,0 +1,307 @@
+hlcsg v3.4 VL34 64-bit (Aug 17 2015)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: "C:/Program Files/J.A.C.K./halflife/hlcsg.exe" "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" -low -wadautodetect 
+Entering C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       6 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 50331648 ] [ 50331648 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wad configuration file[    None ] [    None ]
+wad.cfg group name    [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+convert game_text     [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (0.01 seconds)
+CSGBrush:
+ (0.10 seconds)
+
+Using Wadfile: /program files (x86)/steam/steamapps/common/Half-Life/valve/halflife.wad
+ - Contains 24 used textures, 96.00 percent of map (3116 textures in wad)
+Using Wadfile: /program files (x86)/steam/steamapps/common/Half-Life/valve/liquids.wad
+ - Contains 1 used texture, 4.00 percent of map (32 textures in wad)
+
+Wad files required to run the map: "halflife.wad;liquids.wad;"
+Texture usage is at 0.46 mb (of 32.00 mb MAX)
+0.14 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL34 64-bit (Aug 17 2015)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: "C:/Program Files/J.A.C.K./halflife/hlbsp.exe" "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       6 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 434 (0.04 seconds)
+BSP generation successful, writing portal file 'C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2.prt'
+SolidBSP [hull 1] 500...527 (0.03 seconds)
+SolidBSP [hull 2] 472 (0.03 seconds)
+SolidBSP [hull 3] 500...547 (0.04 seconds)
+Reduced 1440 clipnodes to 1248
+Reduced 116 texinfos to 94
+Reduced 25 texdatas to 25 (1104 bytes to 1104)
+Reduced 1234 planes to 523
+FixBrinks:
+Increased 1248 clipnodes to 1276.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models              1/512           64/32768    ( 0.2%)
+planes            523/32768      10460/655360   ( 1.6%)
+vertexes         3384/65535      40608/786420   ( 5.2%)
+nodes             433/32767      10392/786408   ( 1.3%)
+texinfos           94/32767       3760/1310680  ( 0.3%)
+faces            2616/65535      52320/1310700  ( 4.0%)
+* worldfaces     2616/32768          0/0        ( 8.0%)
+clipnodes        1276/32767      10208/262136   ( 3.9%)
+leaves            257/32760       7196/917280   ( 0.8%)
+* worldleaves     256/8192           0/0        ( 3.1%)
+marksurfaces     2968/65535       5936/131070   ( 4.5%)
+surfedges       12570/512000     50280/2048000  ( 2.5%)
+edges            6286/256000     25144/1024000  ( 2.5%)
+texdata          [variable]       1104/33554432 ( 0.0%)
+lightdata        [variable]          0/50331648 ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]       7953/2097152  ( 0.4%)
+* AllocBlock       22/64             0/0        (34.4%)
+25 textures referenced
+=== Total BSP file data space used: 225425 bytes ===
+Wad files required to run the map: "halflife.wad;liquids.wad;"
+0.45 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL34 64-bit (Aug 17 2015)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: "C:/Program Files/J.A.C.K./halflife/hlvis.exe" "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" 
+Arguments: "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" -low 
+ 256 portalleafs
+ 732 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       6 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+max vis distance    [       0 ] [       0 ]
+priority            [     Low ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (0.02 seconds)
+LeafThread:
+ (0.06 seconds)
+average leafs visible: 64
+g_visdatasize:7069  compressed from 8192
+0.10 seconds elapsed
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 VL34 64-bit (Aug 17 2015)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlrad -----
+Command line: "C:/Program Files/J.A.C.K./halflife/hlrad.exe" -extra "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" 
+Arguments: -extra "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2" -low 
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 6 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [               off ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [          33554432 ] [          33554432 ]
+max lighting memory  [          50331648 ] [          50331648 ]
+priority             [               Low ] [            Normal ]
+
+fast rad             [               off ] [               off ]
+vismatrix algorithm  [            Sparse ] [            Sparse ]
+oversampling (-extra)[                on ] [               off ]
+bounces              [                 8 ] [                 8 ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+light limit threshold[           188.000 ] [           188.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+smoothing threshold 2[         no change ] [         no change ]
+direct threshold     [            10.000 ] [            10.000 ]
+direct light scale   [             1.000 ] [             1.000 ]
+coring threshold     [             0.010 ] [             0.010 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [            64.000 ] [            64.000 ]
+texchop value        [            32.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global texlight gap  [             0.000 ] [             0.000 ]
+global light scale   [ 2.000 2.000 2.000 ] [ 2.000 2.000 2.000 ]
+global gamma         [ 0.550 0.550 0.550 ] [ 0.550 0.550 0.550 ]
+global light scale   [             2.000 ] [             2.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+spread angles        [                on ] [                on ]
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+
+custom shadows with bounce light
+                     [               off ] [               off ]
+rgb transfers        [               off ] [               off ]
+minimum final light  [                 0 ] [                 0 ]
+size of transfer     [         1 (16bit) ] [         1 (16bit) ]
+size of rgbtransfer  [         2 (32bit) ] [         2 (32bit) ]
+soft sky             [                on ] [                on ]
+translucent depth    [             2.000 ] [             2.000 ]
+block opaque         [                on ] [                on ]
+ignore textures      [               off ] [               off ]
+reflectivity gamma   [             1.760 ] [             1.760 ]
+reflectivity scale   [             0.700 ] [             0.700 ]
+blur size            [             1.500 ] [             1.500 ]
+no emitter range     [               off ] [               off ]
+wall bleeding fix    [                on ] [                on ]
+
+
+Load Textures:
+Using Wadfile: C:\Program Files (x86)\Steam\steamapps\common\Half-Life\mymod2\maps\ranangan2.wa_
+25 textures referenced
+Reading texlights from 'C:\Program Files\J.A.C.K\halflife\lights.rad'
+0 opaque models
+0 opaque faces
+2616 faces
+Create Patches : 21519 base patches
+371977 square feet [53564784.00 square inches]
+27 direct lights and 0 fast direct lights
+1 light styles
+
+FindFacePositions:
+ (0.56 seconds)
+BuildFacelights:
+ (4.71 seconds)
+BuildVisLeafs:
+ (2.71 seconds)
+visibility matrix   :  11.1 megs
+MakeScales:
+ (3.12 seconds)
+Transfer Lists :    26166895 :    26.17M transfers
+       Indices :     6316212 :     6.02M bytes
+          Data :    52390253 :    49.96M bytes
+Bounce 1 GatherLight:
+ (0.12 seconds)
+Bounce 2 GatherLight:
+ (0.12 seconds)
+Bounce 3 GatherLight:
+ (0.12 seconds)
+Bounce 4 GatherLight:
+ (0.12 seconds)
+Bounce 5 GatherLight:
+ (0.12 seconds)
+Bounce 6 GatherLight:
+ (0.12 seconds)
+Bounce 7 GatherLight:
+ (0.12 seconds)
+Bounce 8 GatherLight:
+ (0.12 seconds)
+CreateTriangulations:
+ (0.09 seconds)
+AddPatchLights:
+ (2.10 seconds)
+FinalLightFace:
+ (0.01 seconds)
+14.57 seconds elapsed
+
+-----   END   hlrad -----
+
+
+

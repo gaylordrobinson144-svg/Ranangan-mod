@@ -1,0 +1,17 @@
+// Made with XBLAH's Modding tool.
+// Download it at https://xblah.dev/modding-tool/
+
+game "mymod2"
+icon "game"
+startmap "bounce"
+trainmap "t0a0"
+mpentity "info_player_deathmatch"
+gamedll "dlls\hl.dll"
+gamedll_linux "dlls/hl.so"
+gamedll_osx "dlls/hl.dylib"
+secure "1"
+edicts "2048"
+hd_background "1"
+animated_title "1"
+sourcecode "v1.0/half-life-updated.zip"
+playercustomity "0"
